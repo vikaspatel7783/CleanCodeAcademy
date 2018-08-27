@@ -6,13 +6,13 @@ public class Order {
 
         Pizza margheritaWithSingleCheesePizza = Pizza.createMargheritaWithSingleCheesePizza();
 
-        Pizza margheritaWithDoubleCheesePizza = Pizza.createMargheritaWithDoubleCheesePizza();
+        Pizza margheritaWithDoubleCheesePizza = Pizza.createMargheritaWithDoubleCheesePizza("DobleCheese");
 
-        Pizza farmHousePizza = Pizza.createFarmHousePizza();
+        Pizza farmHousePizza = Pizza.createFarmHousePizza("veggies", "capsicum", "mushroom", "tomatoes");
 
-        Pizza maxicanGreenPizza = Pizza.createMaxicanGreenPizza();
+        Pizza maxicanGreenPizza = Pizza.createMaxicanGreenPizza("onion", "capsicum", "tomatoes", "jalapenos", "herbs");
 
-        Pizza extraVagenzaPizza = Pizza.createExtraVagenzaPizza();
+        Pizza extraVagenzaPizza = Pizza.createExtraVagenzaPizza("corn", "blackOlives", "onion", "capsicum", "mushrooms", "tomatoes", "jalapenos");
     }
 
 }

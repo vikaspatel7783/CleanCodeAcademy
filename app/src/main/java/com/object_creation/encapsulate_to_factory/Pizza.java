@@ -1,4 +1,4 @@
-package com.object_creation.method_creation.refactor;
+package com.object_creation.encapsulate_to_factory;
 
 public class Pizza {
 
@@ -17,23 +17,23 @@ public class Pizza {
     private Pizza(String corn, String blackOlives, String onion, String capsicum, String mushrooms, String tomatoes, String jalapenos) { // Extravaganza
     }
 
-    public static Pizza createMargheritaWithDoubleCheesePizza(String doubleCheese) {
+    public static Pizza createPizza(String doubleCheese) {
         return new Pizza(doubleCheese);
     }
 
-    public static Pizza createExtraVagenzaPizza(String corn, String blackOlives, String onion, String capsicum, String mushrooms, String tomatoes, String jalapenos) {
+    public static Pizza createPizza(String corn, String blackOlives, String onion, String capsicum, String mushrooms, String tomatoes, String jalapenos) {
         return new Pizza(corn, blackOlives, onion, capsicum, mushrooms, tomatoes, jalapenos);
     }
 
-    public static Pizza createMaxicanGreenPizza(String onion, String capsicum, String tomatoes, String jalapeino, String herbs) {
+    public static Pizza createPizza(String onion, String capsicum, String tomatoes, String jalapeino, String herbs) {
         return new Pizza(onion, capsicum, tomatoes, jalapeino, herbs);
     }
 
-    public static Pizza createFarmHousePizza(String veggies, String capsicum, String mushroom, String tomatoes) {
+    public static Pizza createPizza(String veggies, String capsicum, String mushroom, String tomatoes) {
         return new Pizza(veggies, capsicum, mushroom, tomatoes);
     }
 
-    public static Pizza createMargheritaWithSingleCheesePizza() {
+    public static Pizza createPizza() {
         return new Pizza();
     }
 }
