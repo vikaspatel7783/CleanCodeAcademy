@@ -1,8 +1,10 @@
 package com.cleancodeacademy.mobile;
 
-import org.junit.Test;
+import com.accumulation.visitor_pattern.MyMain;
 
-import static org.junit.Assert.*;
+import junit.framework.Assert;
+
+import org.junit.Test;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -10,8 +12,16 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
-    @Test
+    /*@Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
+    }*/
+
+    @Test
+    public void testTotalFamiliesContributionTo30() {
+        MyMain myMain = new MyMain();
+        int totalContribution = myMain.collectContribution();
+        Assert.assertEquals(50,totalContribution);
     }
+
 }
