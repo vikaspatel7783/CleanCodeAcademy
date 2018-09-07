@@ -1,4 +1,4 @@
-package com.object_creation.abstract_factory;
+package com.object_creation.abstract_factory.factory;
 
 import com.object_creation.abstract_factory.products.Chair;
 import com.object_creation.abstract_factory.products.Sofa;
@@ -10,19 +10,19 @@ import com.object_creation.abstract_factory.products.concret_products.ArabianTab
 public class ArabianFurnitureFactory extends AbstractFurnitureFactory {
 
     @Override
-    Chair createChair() {
+    public Chair createChair() {
         printLog("ArabianChair");
         return new ArabianChair();
     }
 
     @Override
-    Sofa createSofa() {
+    public Sofa createSofa() {
         printLog("ArabianSofa");
         return new ArabianSofa();
     }
 
     @Override
-    Table createTable() {
+    public Table createTable() {
         printLog("ArabianTable");
         return new ArabianTable();
     }

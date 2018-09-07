@@ -1,4 +1,4 @@
-package com.object_creation.abstract_factory;
+package com.object_creation.abstract_factory.factory;
 
 import com.object_creation.abstract_factory.products.Chair;
 import com.object_creation.abstract_factory.products.Sofa;
@@ -6,10 +6,10 @@ import com.object_creation.abstract_factory.products.Table;
 
 public abstract class AbstractFurnitureFactory {
 
-    abstract Chair createChair();
+    public abstract Chair createChair();
 
-    abstract Sofa createSofa();
+    public abstract Sofa createSofa();
 
-    abstract Table createTable();
+    public abstract Table createTable();
 
 }
