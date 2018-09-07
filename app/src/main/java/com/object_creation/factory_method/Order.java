@@ -2,18 +2,16 @@ package com.object_creation.factory_method;
 
 public class Order {
 
-    public Pizza orderPizza(String pizzaType) {
+    public Pizza orderPizza(String... ingredients) {
 
-        switch (pizzaType) {
-            case "Margerita":
-                return new MargeritaPizza();
+        if (ingredients.length == 1 && ingredients[0].equals("DoubleCheese")) {
+            return new MargeritaPizza().createPizza(ingredients[0]);
 
-            case "FarmHouse":
-                return new FarmHousePizza();
-
-            default:
-                throw new IllegalArgumentException("Invalid pizza type provided= " + pizzaType);
+        } else if (ingredients[0].equals("veggies") && ingredients[1].equals("capsicum")) {
+            return new FarmHousePizza().createPizza(ingredients);
         }
+
+        return null;
     }
 
 }
