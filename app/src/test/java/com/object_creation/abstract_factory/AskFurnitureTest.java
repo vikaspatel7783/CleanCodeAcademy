@@ -9,7 +9,7 @@ public class AskFurnitureTest {
     @Test
     public void askForFurniture() {
 
-        FurnitureClient.Furniture indianFurniture = new AskFurniture().askForFurniture("Arabian");
+        FurnitureClient.Furniture indianFurniture = new AskFurniture().askForFurniture("Indian");
 
         Assert.assertTrue(indianFurniture != null);
     }
