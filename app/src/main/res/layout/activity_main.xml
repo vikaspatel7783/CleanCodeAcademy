@@ -14,4 +14,12 @@
         android:text="GET AUTHORS"
         tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="69dp" />
+
+    <Button
+        android:id="@+id/btnLaunchML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAUNCH ML-KIT"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="130dp" />
 </android.support.constraint.ConstraintLayout>

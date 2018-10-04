@@ -1,5 +1,6 @@
 package com.cleancodeacademy.mobile.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -9,6 +10,8 @@ import android.widget.Toast;
 import com.cleancodeacademy.mobile.R;
 import com.cleancodeacademy.mobile.ui.presenter.IMainActivityPresenter;
 import com.cleancodeacademy.mobile.ui.presenter.MainActivityPresenter;
+
+import mobile.cleancodeacademy.com.mlkit.java.ChooserActivity;
 
 public class MainActivity extends AppCompatActivity implements IMainActivityPresenter.ViewModel {
 
@@ -25,6 +28,14 @@ public class MainActivity extends AppCompatActivity implements IMainActivityPres
             @Override
             public void onClick(View view) {
                 mainActivityPresenter.onGetAuthorsButtonClick();
+            }
+        });
+
+        ((Button)findViewById(R.id.btnLaunchML)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentChooserMLKit = new Intent(v.getContext(), ChooserActivity.class);
+                startActivity(intentChooserMLKit);
             }
         });
     }
