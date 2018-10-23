@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "705309575485",
+    "firebase_url": "https://gotham-6aedb.firebaseio.com",
+    "project_id": "gotham-6aedb",
+    "storage_bucket": "gotham-6aedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705309575485:android:d196741c985228f5",
+        "android_client_info": {
+          "package_name": "mobile.cleancodeacademy.com.mlkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705309575485-f2tmmrp05sp7n2dfqemdh6r4of0sujqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6Z7weVJy6L43qfSA9voyNx04JWX_bj1k"
+        },
+        {
+          "current_key": "AIzaSyBOn0Z6iH5BkXvDt9lHKXuW6pW47cDI-Ws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

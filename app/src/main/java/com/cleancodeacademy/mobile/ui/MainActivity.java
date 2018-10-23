@@ -11,7 +11,8 @@ import com.cleancodeacademy.mobile.R;
 import com.cleancodeacademy.mobile.ui.presenter.IMainActivityPresenter;
 import com.cleancodeacademy.mobile.ui.presenter.MainActivityPresenter;
 
-import mobile.cleancodeacademy.com.mlkit.java.ChooserActivity;
+import mobile.cleancodeacademy.com.mlkit.core.ChooserActivity;
+import mobile.cleancodeacademy.com.mlkit.outer.Interactor;
 
 public class MainActivity extends AppCompatActivity implements IMainActivityPresenter.ViewModel {
 
@@ -34,8 +35,10 @@ public class MainActivity extends AppCompatActivity implements IMainActivityPres
         ((Button)findViewById(R.id.btnLaunchML)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentChooserMLKit = new Intent(v.getContext(), ChooserActivity.class);
-                startActivity(intentChooserMLKit);
+                //Intent intentChooserMLKit = new Intent(v.getContext(), ChooserActivity.class);
+                //startActivity(intentChooserMLKit);
+                Interactor interactor = new Interactor();
+                interactor.openCameraAndCaptureImage(v.getContext());
             }
         });
     }

@@ -20,6 +20,8 @@ import com.google.firebase.ml.common.FirebaseMLException;
 
 import java.nio.ByteBuffer;
 
+import mobile.cleancodeacademy.com.mlkit.outer.ObjectResultCallback;
+
 /** An inferface to process the images with different ML Kit detectors and custom image models. */
 public interface VisionImageProcessor {
 
@@ -32,6 +34,8 @@ public interface VisionImageProcessor {
 
   /** Processes the images. */
   void process(Image bitmap, int rotation, GraphicOverlay graphicOverlay);
+
+  void process(Bitmap bitmap);
 
   /** Stops the underlying machine learning model and release resources. */
   void stop();

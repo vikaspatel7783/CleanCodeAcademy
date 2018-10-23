@@ -11,13 +11,16 @@
     <application>
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-            android:value="barcode,face,ocr,ica" />
+            android:value="barcode,label" />
+        <!-- android:value="barcode,face,ocr,ica" /> -->
 
-        <activity android:name=".java.ChooserActivity"/>
+        <activity android:name=".outer.ui.CaptureActivity"/>
 
-        <activity android:name=".java.LivePreviewActivity"/>
+        <activity android:name=".core.ChooserActivity"/>
 
-        <activity android:name=".java.StillImageActivity"/>
+        <activity android:name=".core.LivePreviewActivity"/>
+
+        <activity android:name=".core.StillImageActivity"/>
 
     </application>
 
